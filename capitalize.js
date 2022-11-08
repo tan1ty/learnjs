@@ -1,9 +1,5 @@
-let allChairs = 'qwertyuiopasdfghjklzxcvbnm1234567890+-_?!';
-
-arrOfAll = allChairs.match(/\S/g);
-
-function getRandomNum() {
-  return Math.floor(Math.random() * 100);
+function capitalize(str) {
+  const upperAll = str.toUpperCase();
+  return upperAll.slice(0, 1) + upperAll.slice(1).toLowerCase();
 }
 
-getRandomNum();
